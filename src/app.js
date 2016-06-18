@@ -19,12 +19,12 @@ const App = props => {
             <HalfPage header="Markdown">
               <TextField />
             </HalfPage>
-            <HalfPage header="Medium">
+            <HalfPage header="Medium" background="#efffff">
               <Medium />
             </HalfPage>
           </div>
         </div>
-      </Provider>      
+      </Provider>
   );
 };
 
