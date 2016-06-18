@@ -5,7 +5,7 @@ import converter from '../../converter.js';
 
 const Medium = props => {
   let content = {
-    __html: converter(props.content)
+    __html: converter(props)
   }
   return (
     <div id="medium" className={styles.container} dangerouslySetInnerHTML={content}></div>
@@ -13,5 +13,6 @@ const Medium = props => {
 };
 
 export default connect(state => ({
-  content: state.content
+  content: state.content,
+  codespan: state.codespan
 }))(Medium);
