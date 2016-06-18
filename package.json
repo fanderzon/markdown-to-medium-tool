@@ -1,0 +1,23 @@
+{
+  "name": "markdown-to-medium",
+  "version": "1.0.0",
+  "description": "Convert markdown to medium format",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markdown": "0.5.0",
+    "react": "15.1.0",
+    "react-dom": "15.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "6.5.0",
+    "react-hot-loader": "^1.3.0"
+  }
+}
