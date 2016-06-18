@@ -3,9 +3,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  background: transparent;
 }
 
 .header {
+  flex: 1;
   padding: 5px;
   text-transform: uppercase;
   color: #777;
@@ -17,4 +19,6 @@
   width: 100%;
   border-top: none;
   font-size: 16px;
+  background: transparent;
+  font-family: monospace;
 }

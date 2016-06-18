@@ -16,10 +16,10 @@ const App = props => {
             iconClassNameRight="muidocs-icon-navigation-expand-more"
             />
           <div className={styles.main}>
-            <HalfPage header="Markdown">
+            <HalfPage header="Markdown" background="#efffff">
               <TextField />
             </HalfPage>
-            <HalfPage header="Medium" background="#efffff">
+            <HalfPage header="Medium">
               <Medium />
             </HalfPage>
           </div>

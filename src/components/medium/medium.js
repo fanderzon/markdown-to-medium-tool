@@ -8,7 +8,7 @@ const Medium = props => {
     __html: converter(props.content)
   }
   return (
-    <div className={styles.container} dangerouslySetInnerHTML={content}></div>
+    <div id="medium" className={styles.container} dangerouslySetInnerHTML={content}></div>
   );
 };
 
