@@ -15,9 +15,9 @@ function toggleMenu(e, props) {
   }
 }
 
-function changeCodespan(key, value, props) {
+function changeCodespan(key, props) {
   let obj = {};
-  obj[key] = value;
+  obj[key] = (key in props.codespan) ? !props.codespan[key] : true;
   props.dispatch(setCodespan(Object.assign(
     {}, props.codespan, obj
   )));
@@ -44,20 +44,20 @@ const Bar = props => {
               <Checkbox
                 label="Bold"
                 checked={props.codespan.strong}
-                onCheck={(e,v) => {
-                  changeCodespan('strong', v, props);
+                onClick={e => {
+                  changeCodespan('strong', props);
                 }} />
               <Checkbox
                 label="Italic"
                 checked={props.codespan.em}
-                onCheck={(e,v) => {
-                  changeCodespan('em', v, props);
+                onClick={e => {
+                  changeCodespan('em', props);
                 }} />
               <Checkbox
-                label="Quoted"
-                checked={props.codespan.quoted} 
-                onCheck={(e,v) => {
-                  changeCodespan('quoted', v, props);
+                label="Quotes"
+                checked={props.codespan.quoted}
+                onClick={e => {
+                  changeCodespan('quoted', props);
                 }} />
             </MenuItem>
         </Drawer>

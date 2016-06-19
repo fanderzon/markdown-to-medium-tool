@@ -18,7 +18,15 @@ export function closeMenu() {
   return { type: CLOSE_MENU };
 }
 
-export function reducer(state = { content: '', menuactive: false, codespan: {} }, action) {
+export function reducer(state = {
+    content: '',
+    menuactive: false,
+    codespan: {
+      strong: true ,
+      em: false,
+      quoted: false
+    }
+  }, action) {
   switch (action.type) {
     case SET_CONTENT:
       return Object.assign({}, state, {
