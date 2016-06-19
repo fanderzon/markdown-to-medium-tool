@@ -12,6 +12,12 @@
   color: #777;
   font-weight: bold;
   font-size: 16px;
+  line-height: 16px;
+}
+
+.subheader {
+  font-size: 12px;
+  color: #999;
 }
 
 .content {
