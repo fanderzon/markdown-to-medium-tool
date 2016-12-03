@@ -14,7 +14,7 @@ function handleClick(e, props) {
   }
 }
 
-const App = props => {
+export const App = props => {
   return (
     <div className="container">
       <AppBar />
