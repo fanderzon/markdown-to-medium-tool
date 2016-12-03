@@ -1,0 +1,35 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, sans-serif;
+}
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#medium {
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  padding: 20px;
+}
+#medium
+#medium h1,
+#medium h2,
+#medium h3,
+#medium h4,
+#medium h5,
+#medium h6 {
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+}
+#medium pre {
+  background: rgba(0,0,0,.05);
+  font-family: "Courier New",Courier,monospace;
+  font-size: 16px;
+  padding: 20px;
+  white-space: pre-wrap;
+}

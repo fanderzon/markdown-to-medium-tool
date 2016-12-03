@@ -31,7 +31,7 @@ const Bar = props => {
         iconClassNameRight="muidocs-icon-navigation-expand-more"
         onLeftIconButtonTouchTap={e => toggleMenu(e, props)}
         />
-        <Drawer open={props.menuactive} width={400}>
+        <Drawer open={props.menuactive} width={250}>
           <AppBar
             title="Markdown to Medium"
             iconClassNameRight="muidocs-icon-navigation-expand-more"
@@ -63,10 +63,6 @@ const Bar = props => {
         </Drawer>
     </div>
   );
-  // return <textarea
-  //   className={styles.textfield}
-  //   ref={node => { content = node; }}
-  //   onChange={e => { props.dispatch(setContent(content.value)); }}></textarea>;
 };
 
 export default connect(state => ({

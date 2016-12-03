@@ -4,7 +4,10 @@
   "description": "Convert markdown to medium format",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +28,7 @@
     "babel-preset-react": "6.5.0",
     "css-loader": "^0.23.1",
     "react-hot-loader": "^1.3.0",
+    "react-scripts": "0.7.0",
     "style-loader": "0.13.1"
   }
 }

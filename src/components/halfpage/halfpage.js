@@ -1,16 +1,16 @@
 import React from 'react';
-import styles from './halfpage.css';
+import './halfpage.css';
 
 const HalfPage = props => {
   let style = {
     background: props.background || 'transparent'
   };
-  let subheader = !props.subheader ? '' : <span className={styles.subheader}> - {props.subheader}</span>;
+  let subheader = !props.subheader ? '' : <span className="subheader"> - {props.subheader}</span>;
 
   return (
-    <div className={styles.container} style={style}>
-      <div className={styles.header}>{props.header}{subheader}</div>
-      <div className={styles.content}>
+    <div className="container" style={style}>
+      <div className="header">{props.header}{subheader}</div>
+      <div className="content">
         {props.children}
       </div>
     </div>

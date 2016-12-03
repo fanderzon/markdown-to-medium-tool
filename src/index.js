@@ -10,6 +10,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import App from './app.js';
 import { store } from './state.js';
+import './index.css';
 
 const WrappedApp = props => {
   return (
@@ -17,8 +18,8 @@ const WrappedApp = props => {
       <MuiThemeProvider muiTheme={getMuiTheme()}>
         <App />
       </MuiThemeProvider>
-    </Provider>  
+    </Provider>
   );
 }
 
-ReactDOM.render(<WrappedApp />, document.querySelector('#app'));
+ReactDOM.render(<WrappedApp />, document.querySelector('#root'));

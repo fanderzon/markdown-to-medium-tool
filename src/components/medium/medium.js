@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './medium.css';
+import './medium.css';
 import { connect } from 'react-redux';
 import converter from '../../converter.js';
 
@@ -8,7 +8,7 @@ const Medium = props => {
     __html: converter(props)
   }
   return (
-    <div id="medium" className={styles.container} dangerouslySetInnerHTML={content}></div>
+    <div id="medium" className="container" dangerouslySetInnerHTML={content}></div>
   );
 };
 
