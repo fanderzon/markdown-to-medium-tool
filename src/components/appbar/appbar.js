@@ -1,10 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import AppBar from 'material-ui/AppBar';
-import Drawer from 'material-ui/Drawer';
-import Divider from 'material-ui/Divider';
-import Checkbox from 'material-ui/Checkbox';
-import MenuItem from 'material-ui/MenuItem';
 import { openMenu, closeMenu, setCodespan } from '../../state.js';
 
 function toggleMenu(e, props) {
@@ -28,39 +24,8 @@ const Bar = props => {
     <div>
       <AppBar
         title="Markdown to Medium"
-        iconClassNameRight="muidocs-icon-navigation-expand-more"
-        onLeftIconButtonTouchTap={e => toggleMenu(e, props)}
+        showMenuIconButton={false}
         />
-        <Drawer open={props.menuactive} width={250}>
-          <AppBar
-            title="Markdown to Medium"
-            iconClassNameRight="muidocs-icon-navigation-expand-more"
-            onLeftIconButtonTouchTap={e => toggleMenu(e, props)}
-            />
-            <MenuItem>
-              <div style={{
-                fontSize: '20px'
-              }}>Format inline codespan with</div>
-              <Checkbox
-                label="Bold"
-                checked={props.codespan.strong}
-                onClick={e => {
-                  changeCodespan('strong', props);
-                }} />
-              <Checkbox
-                label="Italic"
-                checked={props.codespan.em}
-                onClick={e => {
-                  changeCodespan('em', props);
-                }} />
-              <Checkbox
-                label="Quotes"
-                checked={props.codespan.quoted}
-                onClick={e => {
-                  changeCodespan('quoted', props);
-                }} />
-            </MenuItem>
-        </Drawer>
     </div>
   );
 };
