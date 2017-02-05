@@ -5,12 +5,12 @@ const HalfPage = props => {
   let style = {
     background: props.background || 'transparent'
   };
-  let subheader = !props.subheader ? '' : <span className="subheader"> - {props.subheader}</span>;
+  let subheader = !props.subheader ? '' : <span className="halfpage__subheader"> - {props.subheader}</span>;
 
   return (
-    <div className="container" style={style}>
-      <div className="header">{props.header}{subheader}</div>
-      <div className="content">
+    <div className="halfpage" style={style}>
+      <div className="halfpage__header">{props.header}{subheader}</div>
+      <div className="halfpage__content">
         {props.children}
       </div>
     </div>
