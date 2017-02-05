@@ -6,19 +6,12 @@ import TextField from './components//textfield/textfield.js';
 import Medium from './components/medium/medium.js';
 import AppBar from './components/appbar/appbar.js';
 import './app.css';
-import { closeMenu } from './state.js';
-
-function handleClick(e, props) {
-  if (props.menuactive) {
-    props.dispatch(closeMenu());
-  }
-}
 
 export const App = props => {
   return (
     <div className="container">
       <AppBar />
-      <div className="main" onClick={e => handleClick(e, props)}>
+      <div className="main">
         <HalfPage header="Markdown" background="#efffff">
           <TextField />
         </HalfPage>
